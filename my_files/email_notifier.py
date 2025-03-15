@@ -1,7 +1,6 @@
 import os
 import smtplib
 from dotenv import load_dotenv
-load_dotenv()
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
@@ -10,6 +9,7 @@ print("[+] Setting up the sender info")
 smpt_server = 'smtp.mail.yahoo.com'
 smtp_port = 465
 sender_email = 'surajwandhare@yahoo.com'
+load_dotenv()
 password = os.getenv('E_PASSWORD')
 receiver_email = 'surajwandhare96@gmail.com'
 
